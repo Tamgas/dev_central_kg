@@ -1,0 +1,70 @@
+#video{
+    .btn{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 20px 36px;
+        button{
+          padding: 16px; 
+           background: #58e91f;
+           color: white;
+           border: none;
+           outline: none;
+        }
+       }
+
+    .video--text{
+          h2{
+            color: #b1b3b0;
+            font-size: 24px;
+            letter-spacing: 0,4em;
+            font: 700;
+            padding: 35px 60px;
+          }
+        } 
+        
+        .text{
+           display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 30px; 
+         .video--img{
+            position: relative;
+            img{
+                width: 575px;
+                height: 350px;
+                opacity: 0.9;
+                filter: blur(3px);
+            }
+          }
+        }
+        .text--video{
+            display: flex;
+            align-items: center;
+            justify-content: cenetr;
+            flex-direction: column;
+            position: absolute;
+
+
+            top: 330px;
+            left: 585px;
+            color: hsl(0, 0%, 1%);
+
+           .video--dev{
+            display: flex;
+            gap: 65px;
+            padding-top: 40px;
+            padding-left: -30px;
+        }
+        
+        }
+       
+       
+    
+    
+      
+     
+
+       
+}

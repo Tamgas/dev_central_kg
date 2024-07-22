@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface ModalProps {
     show: boolean;
@@ -12,11 +13,21 @@ const Modal: React.FC<ModalProps> = ({ show, handleClose }) => {
                 <span className="close" onClick={handleClose}>&times;</span>
                 <img src="https://devkg.com/js/img/logo.458f2cd.svg" alt="img" />
                 <nav>
-                    <a href="#Вакансии">Вакансии</a>
-                    <a href="#Мероприятия">Мероприятия</a>
-                    <a href="#Видео">Видео</a>
-                    <a href="#Организация">Организация</a>
-                    <a href="#Сообщество">Сообщество</a>
+                <Link to={'/'}>
+                        Вакансии
+                        </Link>
+                        <Link to={'/events'}>
+                        Мероприятия
+                        </Link>
+                        <Link to={'/meetups'}>
+                        Видео
+                        </Link>
+                        <Link to={'/organizations'}>
+                        Организация
+                        </Link>
+                        <Link to={'/community'}>
+                        Сообщество
+                        </Link>
                 </nav>
             </div>
         </div>

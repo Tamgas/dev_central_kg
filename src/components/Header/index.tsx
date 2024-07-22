@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaArrowRightToBracket } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Modal from '../Modal';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -15,11 +16,21 @@ const Header: React.FC = () => {
                 <div className="main-header">
                     <img src="https://devkg.com/js/img/logo.458f2cd.svg" alt="img" />
                     <nav>
-                        <a href="#Вакансии">Вакансии</a>
-                        <a href="#Мероприятия">Мероприятия</a>
-                        <a href="#Видео">Видео</a>
-                        <a href="#Организация">Организация</a>
-                        <a href="#Сообщество">Сообщество</a>
+                        <Link to={'/'}>
+                        Вакансии
+                        </Link>
+                        <Link to={'/events'}>
+                        Мероприятия
+                        </Link>
+                        <Link to={'/meetups'}>
+                        Видео
+                        </Link>
+                        <Link to={'/organizations'}>
+                        Организация
+                        </Link>
+                        <Link to={'/community'}>
+                        Сообщество
+                        </Link>
                     </nav>
 
                     <div className="my-btn">
