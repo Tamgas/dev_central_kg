@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Organizasii() {
+  const nav = useNavigate();
   return (
     <div id="organizasii">
       <div className="container">
@@ -14,7 +16,7 @@ function Organizasii() {
                 />
                 <div className="organizasii--cards__card--title__company">
                   <h3>Компания</h3>
-                  <h2>MBank</h2>
+                  <h2 onClick={() => nav("/detailO")}>MBank</h2>
                 </div>
               </div>
               <div className="organizasii--cards__card--about">
@@ -25,32 +27,6 @@ function Organizasii() {
                 <div className="organizasii--cards__card--about__block">
                   <h3>Мероприятия</h3>
                   <h2>1</h2>
-                </div>
-                <div className="organizasii--cards__card--about__block">
-                  <h3>Видео</h3>
-                  <h2>0</h2>
-                </div>
-              </div>
-            </div>
-            <div className="organizasii--cards__card">
-              <div className="organizasii--cards__card--title">
-                <img
-                  src="https://devkg.com/images/organizations/d7263143ab32962e79a0f5835bda6150.webp"
-                  alt="img"
-                />
-                <div className="organizasii--cards__card--title__company">
-                  <h3>Компания</h3>
-                  <h2>Optima Bank</h2>
-                </div>
-              </div>
-              <div className="organizasii--cards__card--about">
-                <div className="organizasii--cards__card--about__block">
-                  <h3>Вакансии</h3>
-                  <h2>167</h2>
-                </div>
-                <div className="organizasii--cards__card--about__block">
-                  <h3>Мероприятия</h3>
-                  <h2>0</h2>
                 </div>
                 <div className="organizasii--cards__card--about__block">
                   <h3>Видео</h3>
