@@ -42,6 +42,9 @@ const Vacancy = () => {
                   })}
               </div>
             </div>
+            <div className="vacancy--btn">
+              <button>Следующая страница</button>
+            </div>
           </div>
         </div>
       </div>
