@@ -10,6 +10,7 @@ import Soobshestvo from "./components/Soobshestvo";
 import DetailVacancy from "./components/DetailVacancy";
 import DetailOrganization from "./components/DetailOrganization";
 import DetailEvents from "./components/DetailEvents";
+import DetailVideoo from "./components/DetailVideoo";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/detailVacancy" element={<DetailVacancy />} />
         <Route path="/detailO" element={<DetailOrganization />} />
         <Route path="/detailEvents" element={<DetailEvents />} />
+        <Route path="/detailVideoo" element={<DetailVideoo />} />
       </Routes>
       <Footer />
     </div>
