@@ -1,48 +1,153 @@
-import React from "react";
-import img from '../../images/video.webp'
-function Videoo() {
-  return (
-    <div id="video">
-      <div className="container">
-        <div className="btn">
-          <button>Добавить видео</button>
+import React from 'react';
+
+import video1 from '../../images/video1.webp'
+import video2 from '../../images/video2.webp'
+import video3 from '../../images/video3.webp'
+import video4 from '../../images/video4.webp'
+import { Link } from 'react-router-dom';
+
+
+
+
+const Video = () => {
+    return (
+        <div id='video'>
+            <div className="container">
+          <div className="btn">
+          <button >Добавить видео</button>
+          </div>
+
+          <div className="text">
+         <h1>Все видео</h1>
+          </div>
+                <div className="video">
+                  
+               <div className="video--img1">
+          <Link to={"/detalvideo"}>    <img src={video1} alt="img" /></Link>
+               <div className="video--img1__text1">
+                <h1>ChatGPT —<br />
+                 революция или <br />
+                  мода? Как нейросети <br />
+                  могут помочь в <br />
+                   работе</h1>
+                   
+                <div className="video--img1__text1--list">
+                    <div className="video--img1__text1--list__kor">
+                    <h6>Организатор</h6>
+                    <h2>
+                        Kolesa Group
+                    </h2>
+
+
+                    </div>
+                    <div className="video--img1__text1--list__kor2">
+                    <h6>Когда</h6>
+                    <h2>
+                        12сентябрь 2023
+                    </h2>
+
+                    
+                    </div>
+
+                </div>
+               </div>
+               </div>
+
+
+               <div className="video--img1">
+             <Link to={"/detalvideo"}>  <img src={video3} alt="img" /></Link>
+               <div className="video--img1__text1">
+                <h1>Кибирд (Keybeard) <br />
+                 #43 – Синдром <br />
+                  самозванца в IT 2023 <br />
+                   (feat. Даниил <br />
+                    Вартанов)</h1>
+                <div className="video--img1__text1--list">
+                    <div className="video--img1__text1--list__kor">
+                    <h6>Организатор</h6>
+                    <h2>
+                        Mad Devs
+                    </h2>
+
+
+                    </div>
+                    <div className="video--img1__text1--list__kor2">
+                    <h6>Когда</h6>
+                    <h2>
+                        30 августа 2023
+                    </h2>
+
+                    
+                    </div>
+
+                </div>
+               </div>
+               </div>
+
+
+               <div className="video--img1">
+           <Link to={"/detalvideo"}>    <img src={video2} alt="img" /></Link>
+               <div className="video--img1__text1">
+                <h1>Развивайся или <br />
+                 проиграешь: грейды <br />
+                  и менторство как <br />
+                   инструменты <br />
+                    карьерного роста</h1>
+                <div className="video--img1__text1--list">
+                    <div className="video--img1__text1--list__kor">
+                    <h6>Организатор</h6>
+                    <h2>
+                        Kolesa Group
+                    </h2>
+
+
+                    </div>
+                    <div className="video--img1__text1--list__kor2">
+                    <h6>Когда</h6>
+                    <h2>
+                        31 июля 2023
+                    </h2>
+
+                    
+                    </div>
+
+                </div>
+               </div>
+               </div>
+
+
+               <div className="video--img1">
+             <Link to={"/detalvideo"}>  <img src={video4} alt="img" /></Link>
+               <div className="video--img1__text1">
+                <h1>Глазами CTO: как <br />
+                 устроены команды <br />
+                  разработки в Kolesa <br />
+                   Group и Beeline <br />
+                    Казахстан</h1>
+                <div className="video--img1__text1--list">
+                    <div className="video--img1__text1--list__kor">
+                    <h6>Организатор</h6>
+                    <h2>
+                        Kolesa Group
+                    </h2>
+
+                    </div>
+                    <div className="video--img1__text1--list__kor2">
+                    <h6>Когда</h6>
+                    <h2>
+                        14 июля 2023
+                    </h2>
+
+                    
+                    </div>
+
+                </div>
+               </div>
+               </div>
+                </div>
+            </div>
+
         </div>
-        <div className="video--text">
-           <h2>Все видео</h2>
-         </div>
-         <div className="text">
-          <div className="video--img">
-         <img src={img} alt="img" />
-         </div>
-         </div>
-         <div className="text--video">
-          <div className="video-text1">
-          <h1>Кибирд (Keybread) <br />
-          #43 - Синдиром <br />
-          Самозваница в IT 2023 <br />
-          (feat. Даниил <br/>
-         Вартанов )
-          </h1>
-           </div>
-          <div className="video--dev">
-          <h5>Организатор</h5>
-          <h5>Когда</h5>
-         </div>
-             <div className="video--dev1">
-          <h2>Mad Devs</h2>
-          <h2>30 август 2023</h2>
-         </div>
-         </div>
-         
-        
-
-        
-       
-        
-        
-      </div>
-    </div>
-  );
-}
-
-export default Videoo;
+    );
+};
+export default Video;

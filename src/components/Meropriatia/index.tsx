@@ -20,13 +20,13 @@ function Meropriatia() {
             </div>
              
             <div className="text--event">
-              <h6>Организатор</h6>
-              <h6>Локация</h6>
+              <h5>Организатор</h5>
+              <h5>Локация</h5>
             </div>
             </div>
            <div className="text">
-            <h4>JUG Ru Group</h4>
-            <h4>Онлайн</h4>
+            <h3>JUG Ru Group</h3>
+            <h3>Онлайн</h3>
            </div>
            
           </div>
